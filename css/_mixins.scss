@@ -1,0 +1,27 @@
+@mixin flex($direction: row, $jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $direction;
+}
+
+@mixin font-face($url, $font-weight: 400, $style: normal) {
+  @font-face {
+    font-family: $url;
+    src: url('../fonts/' + $url + '.otf') format('opentype');
+    font-weight: $font-weight;
+    font-style: $style;
+  }
+}
+
+@mixin media-query($point) {
+  @if $point == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+}

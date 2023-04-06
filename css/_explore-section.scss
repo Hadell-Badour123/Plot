@@ -1,0 +1,103 @@
+#explore-section {
+  @include flex();
+
+  min-height: 100vh;
+  padding: 4.8rem 14.4rem;
+  position: relative;
+
+  hr {
+    width: 5px;
+    height: 100%;
+    border: 0;
+    background-color: #83b8df;
+  }
+}
+
+.bg-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95.2rem;
+  height: 47.7rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.left-section {
+  flex: 1;
+  height: calc(100vh - 10rem);
+
+  h2 {
+    font-family: 'SF-Pro-Display-Semibold';
+    text-align: left;
+    font-size: 5.6rem;
+    margin-bottom: 1.4rem;
+    color: #365d7d;
+  }
+
+  p {
+    font-family: 'SF-Pro-Display-Regular';
+    font-size: 2rem;
+    color: #4177a1;
+    max-width: 60.1rem;
+  }
+}
+
+.right-section {
+  height: calc(100vh - 10rem);
+  flex: 1;
+  border: 1px solid #83b8df;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  @include flex($direction: column, $ai: flex-start, $jc: space-between);
+
+  font-family: 'SF-Pro-Display-Medium';
+  padding: 3.2rem;
+  color: #4177a1;
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  .explore-btn-container {
+    @include flex($jc: space-between);
+
+    width: 100%;
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+.top-left {
+  border-bottom: 1px solid #83b8df;
+  border-right: 1px solid #83b8df;
+}
+
+.top-right {
+  background-image: url('../images/luxurioius-designs-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  border-bottom: 1px solid #83b8df;
+}
+
+.bottom-left {
+  border-right: 1px solid #83b8df;
+}

@@ -1,0 +1,82 @@
+#hero-section {
+  @include flex($direction: column);
+
+  min-height: 100vh;
+  background-image: url('../images/hero-section-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.main-container {
+  @include flex($direction: column);
+
+  row-gap: 10.9rem;
+}
+
+.text-container {
+  color: white;
+
+  h1 {
+    font-size: 5.6rem;
+    font-family: 'SF-Pro-Display-Medium';
+  }
+  p {
+    max-width: 56.8rem;
+    margin: auto;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+}
+
+.btn-container {
+  @include flex($jc: space-between);
+  gap: 1rem;
+  backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2.3rem;
+  border-radius: 50px;
+
+  button {
+    @include flex($jc: space-between);
+    padding: 0.5rem 2rem;
+    border: 1px solid white;
+    column-gap: 1.5rem;
+
+    span {
+      font-size: 2.1rem;
+      color: white;
+    }
+
+    &:last-child {
+      background-color: white !important;
+      span {
+        color: #98755a;
+      }
+    }
+  }
+}
+
+.discover-container {
+  text-decoration: none;
+}
+
+.discover {
+  @include flex($direction: column);
+
+  gap: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.7rem;
+
+  span {
+    font-size: 1.2rem;
+
+    &:last-child {
+      width: 3px;
+      height: 3px;
+      background-color: white;
+    }
+  }
+}

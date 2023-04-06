@@ -1,0 +1,17 @@
+@import 'global';
+@import 'mixins';
+@import 'navbar';
+@import 'hero-section';
+@import 'explore-section';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @include font-face($url: 'SF-Pro-Display-Regular');
+  @include font-face($url: 'SF-Pro-Display-Bold', $font-weight: bold);
+  @include font-face($url: 'SF-Pro-Display-Light', $font-weight: lighter);
+  @include font-face($url: 'SF-Pro-Display-Semibold', $font-weight: 600);
+  @include font-face($url: 'SF-Pro-Display-Medium', $font-weight: 500);
+}
