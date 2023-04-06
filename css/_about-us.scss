@@ -1,0 +1,37 @@
+#about-us {
+  @include flex($jc: space-between);
+}
+
+.about-us-left-container {
+  flex: 1;
+  padding: 4.8rem 0;
+  padding-left: 14.4rem;
+  min-height: 80vh;
+  color: #4177a1;
+  background-image: url('../images/about-us-left-bg.png');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+
+  h2 {
+    font-size: 5.6rem;
+    font-family: 'SF-Pro-Display-Semibold';
+  }
+
+  p {
+    max-width: 46.4rem;
+    font-size: 2rem;
+    font-family: 'SF-Pro-Display-Regular';
+  }
+
+  .about-us-text-container {
+    padding-left: 11.2rem;
+    padding-top: 0.9rem;
+  }
+}
+
+.about-us-right-container {
+  flex: 1;
+  padding: 4.8rem 0;
+  padding-right: 14.4rem;
+}

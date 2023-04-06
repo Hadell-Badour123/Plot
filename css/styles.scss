@@ -3,6 +3,9 @@
 @import 'navbar';
 @import 'hero-section';
 @import 'explore-section';
+@import 'hundreds-of-plans';
+@import 'about-us';
+@import 'footer';
 
 * {
   padding: 0;
@@ -14,4 +17,8 @@
   @include font-face($url: 'SF-Pro-Display-Light', $font-weight: lighter);
   @include font-face($url: 'SF-Pro-Display-Semibold', $font-weight: 600);
   @include font-face($url: 'SF-Pro-Display-Medium', $font-weight: 500);
+}
+
+html {
+  margin: 0 !important;
 }

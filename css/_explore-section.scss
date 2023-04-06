@@ -27,7 +27,7 @@
 
 .left-section {
   flex: 1;
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
 
   h2 {
     font-family: 'SF-Pro-Display-Semibold';
@@ -46,7 +46,7 @@
 }
 
 .right-section {
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
   flex: 1;
   border: 1px solid #83b8df;
   display: grid;
