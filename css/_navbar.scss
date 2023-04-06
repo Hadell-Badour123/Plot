@@ -6,14 +6,34 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 100;
   background: rgb(37, 67, 89);
   background: linear-gradient(180deg, rgba(37, 67, 89, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 0.5rem 14.4rem;
+  width: 100%;
+
   a {
     color: white;
     font-family: 'SF-Pro-Display-Regular';
   }
+
+  @include media-query(mobile) {
+    padding: 2rem;
+  }
+}
+
+.navbar-toggler {
+  background-color: white;
+  padding: 1rem 1rem;
+  outline: none;
+
+  &:focus {
+    box-shadow: initial;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url('../images/menu-icon.svg');
 }
 
 .navbar-nav {
@@ -31,7 +51,10 @@ header {
 .navbar .container-fluid {
   a {
     flex: 1;
-    text-align: center;
+    text-align: right;
+    @include media-query(mobile) {
+      text-align: left;
+    }
   }
 }
 

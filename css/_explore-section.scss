@@ -11,6 +11,12 @@
     border: 0;
     background-color: #83b8df;
   }
+
+  @include media-query(mobile) {
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 2rem;
+  }
 }
 
 .bg-container {
@@ -22,6 +28,10 @@
 
   img {
     width: 100%;
+  }
+
+  @include media-query(mobile) {
+    display: none;
   }
 }
 
@@ -42,6 +52,10 @@
     font-size: 2rem;
     color: #4177a1;
     max-width: 60.1rem;
+  }
+
+  @include media-query(mobile) {
+    min-height: auto;
   }
 }
 

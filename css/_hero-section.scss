@@ -27,6 +27,19 @@
     margin: auto;
     text-align: center;
     font-size: 2.4rem;
+    font-family: 'SF-Pro-Display-Light';
+  }
+
+  @include media-query(mobile) {
+    h1 {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+
+    p {
+      width: 70%;
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -56,6 +69,18 @@
       }
     }
   }
+
+  @include media-query(mobile) {
+    flex-wrap: wrap;
+    backdrop-filter: blur(30px);
+    border-radius: 0;
+    button {
+      flex: 1;
+      span {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
 
 .discover-container {
@@ -78,5 +103,10 @@
       height: 3px;
       background-color: white;
     }
+  }
+
+  @include media-query(mobile) {
+    width: 100%;
+    left: 0;
   }
 }
