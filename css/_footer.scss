@@ -48,6 +48,14 @@ footer {
   @include flex($jc: flex-start);
 
   column-gap: 3.2rem;
+
+  .footer-image-container {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
 }
 
 #explore-footer {
@@ -70,6 +78,11 @@ footer {
       color: #cad7e0;
       font-size: 1.6rem;
       font-family: 'SF-Pro-Display-Medium';
+      transition: all 0.3s;
+
+      &:hover {
+        color: white;
+      }
     }
   }
 

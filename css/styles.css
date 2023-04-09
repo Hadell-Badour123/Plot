@@ -65,6 +65,7 @@ header {
   border: 2px solid white;
   background-color: transparent;
   color: white;
+  transition: all 0.4s;
 }
 .sign-up-btn:hover {
   border-color: transparent;
@@ -76,6 +77,7 @@ header {
   border: 2px solid transparent;
   background-color: white;
   color: #4177a1;
+  transition: all 0.4s;
 }
 .login-btn:hover {
   border-color: white;
@@ -152,23 +154,54 @@ header {
 }
 .btn-container button {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 0.5rem 2rem;
-  border: 1px solid white;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  border: none;
+  gap: 1.5rem;
 }
 .btn-container button span {
   font-size: 2.1rem;
+  color: #98755a;
+}
+.btn-container button img {
+  width: 22px;
+}
+.btn-container select {
+  padding: 0.5rem 2rem;
+  padding-right: 45px;
+  border: 2px solid white;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  background-color: transparent;
+  font-size: 2.1rem;
+  outline: none;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 91%;
+  background-size: 15px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  transition: all 0.4s;
   color: white;
 }
-.btn-container button:last-child {
-  background-color: white !important;
+.btn-container select option {
+  color: black;
 }
-.btn-container button:last-child span {
+.btn-container select:last-child {
+  background-color: white;
+  background-image: url("../images/search-normal-1.png");
+  background-position: 10%;
+  background-size: 20px 20px;
   color: #98755a;
+  padding-left: 4.5rem;
+  padding-right: 2rem;
+}
+.btn-container select:hover {
+  border-color: #98755a;
 }
 @media (max-width: 600px) {
   .btn-container {
@@ -296,6 +329,7 @@ header {
   font-family: "SF-Pro-Display-Medium";
   padding: 3.2rem;
   color: #4177a1;
+  transition: all 0.3s;
 }
 .top-left h3,
 .top-right h3,
@@ -325,6 +359,20 @@ header {
 .bottom-right .explore-btn-container button {
   background-color: transparent;
   border: none;
+  transition: all 0.4s;
+}
+.top-left .explore-btn-container button:hover,
+.top-right .explore-btn-container button:hover,
+.bottom-left .explore-btn-container button:hover,
+.bottom-right .explore-btn-container button:hover {
+  transform: translateX(5px);
+}
+.top-left:hover,
+.top-right:hover,
+.bottom-left:hover,
+.bottom-right:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px rgba(125, 125, 125, 0.1);
 }
 
 .top-left {
@@ -640,6 +688,12 @@ header {
   padding: 4.8rem 0;
   padding-right: 14.4rem;
 }
+.about-us-right-container img {
+  transition: all 0.4s;
+}
+.about-us-right-container img:hover {
+  transform: translateY(-5px);
+}
 @media (max-width: 600px) {
   .about-us-right-container {
     display: none;
@@ -703,6 +757,12 @@ footer hr {
   -moz-column-gap: 3.2rem;
        column-gap: 3.2rem;
 }
+.social-media .footer-image-container {
+  transition: all 0.3s;
+}
+.social-media .footer-image-container:hover {
+  transform: translateY(5px);
+}
 
 #explore-footer {
   display: flex;
@@ -727,6 +787,10 @@ footer hr {
   color: #cad7e0;
   font-size: 1.6rem;
   font-family: "SF-Pro-Display-Medium";
+  transition: all 0.3s;
+}
+#explore-footer div a:hover {
+  color: white;
 }
 @media (max-width: 600px) {
   #explore-footer {

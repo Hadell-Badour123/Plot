@@ -50,6 +50,14 @@
   padding: 4.8rem 0;
   padding-right: 14.4rem;
 
+  img {
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
   @include media-query(mobile) {
     display: none;
   }
