@@ -769,6 +769,7 @@ footer hr {
 }
 .social-media .footer-image-container {
   transition: all 0.3s;
+  padding: 0.5rem;
 }
 .social-media .footer-image-container:hover {
   transform: translateY(5px);
